@@ -1,24 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-user = User.create!(
-  email: "user@owner.com",
-  password: "123456",
-  name: "Max",
-  phone_number: "476654878",
-  address: "Ajhasjdh akshd 45"
-)
+10.times do |n|
+  puts "Generating user #{n + 1}"
+  user = User.create!(
+    email: "user#{n + 1}@owner.com",
+    password: "123456",
+    name: Faker::Name.name,
+    phone_number: Faker::PhoneNumber.phone_number,
+    address: Faker::Address.street_address
+  )
 
-Dog.create!(
-  name: "Max",
-  breed: "German shepherd",
-  born_on: rand(Date.new(2012, 1, 1)..Date.today),
-  sex: ["male", "female"].sample,
-  neutered: [true, false].sample,
-  size: %w[small medium large giant],
-  user: user
-)
+  rand(1..3).times do
+    puts "Generating dog for user #{n + 1}"
+    Dog.create!(
+      name: Faker::Creature::Dog.name,
+      breed: Faker::Creature::Dog.breed,
+      born_on: rand(Date.new(2012, 1, 1)..Date.today),
+      sex: ["male", "female"].sample,
+      neutered: [true, false].sample,
+      size: %w[small medium large giant].sample,
+      user: user
+    )
+  end
+end
