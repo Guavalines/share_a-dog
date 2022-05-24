@@ -1,0 +1,26 @@
+<div class="container my-5">
+  <h1>
+  DOG IMAGE
+  </h1>
+  <p>
+    <strong>Name:</strong>
+    <%= @dog.name%>
+    <strong>breed:</strong>
+    <%= @dog.breed%>
+    <strong>age:</strong>
+    <%= (Date.today - @dog.born_on).to_i / 365 %>
+    <strong>sex:</strong>
+    <%= @dog.sex%>
+    <strong>size:</strong>
+    <%= @dog.size%>
+    <strong>neutered:</strong>
+    <%= @dog.neutered%>
+    <strong>user:</strong>
+    <%# <%= current_user.name %>
+  </p>
+    <button type="button" class="btn btn-flat" data-bs-toggle="modal" data-bs-target="#">
+      book dog
+      <div class="p-3 rounded-bottom d-flex flex-column btn btn-dark btn1">
+    </button>
+
+</div>
