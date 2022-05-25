@@ -21,3 +21,88 @@
     )
   end
 end
+
+
+<div class="container">
+      <h2>Mobile full-screen, laptop half-half</h2>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+      </div>
+    </div>
+<h2>Mobile full-screen, laptop half-half</h2>
+<div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+      </div>
+<div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+<div class="card bg-light">
+            😀
+          </div>
+<div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+<div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+<div class="card bg-light">
+            😀
+          </div>
+<div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+<div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+      </div>
+<div class="container">
+      <h2>Mobile full-screen, laptop half-half</h2>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-light">
+            😀
+          </div>
+        </div>
+      </div>
+    </div>
