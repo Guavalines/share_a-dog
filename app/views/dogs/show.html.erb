@@ -27,7 +27,5 @@
     <%= @dog.neutered%>
   </p>
 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
-    Book dog (TODO)
-  </button>
+  <%= link_to "add another dog", new_dog_path(@dog.id), class: 'btn btn-primary' %>
 </div>
