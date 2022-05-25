@@ -5,22 +5,29 @@
   <p>
     <strong>Name:</strong>
     <%= @dog.name%>
+  </p>
+  <p>
     <strong>breed:</strong>
     <%= @dog.breed%>
+  </p>
+  <p>
     <strong>age:</strong>
-    <%= (Date.today - @dog.born_on).to_i / 365 %>
+    <%= @dog.age %>
+  </p>
+  <p>
     <strong>sex:</strong>
     <%= @dog.sex%>
+  </p>
+  <p>
     <strong>size:</strong>
     <%= @dog.size%>
+  </p>
+  <p>
     <strong>neutered:</strong>
     <%= @dog.neutered%>
-    <strong>user:</strong>
-    <%# <%= current_user.name %>
   </p>
-    <button type="button" class="btn btn-flat" data-bs-toggle="modal" data-bs-target="#">
-      book dog
-      <div class="p-3 rounded-bottom d-flex flex-column btn btn-dark btn1">
-    </button>
 
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+    Book dog (TODO)
+  </button>
 </div>
