@@ -10,3 +10,28 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.text_i_want_to_align {
+  text-align: center;
+}
+
+.center {
+  width: 50%;
+  margin: auto 158px;
+}
+
+.container-fluid {
+	/* flex-wrap: revert; */
+	flex-direction: column;
+	align-items: center;
+	align-content: space-between;
+	text-align: -moz-center;
+}
+
+.perrito > img {
+  height: 50px
+}
+
+li > p {
+  margin: auto 158px;
+}
