@@ -20,6 +20,14 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
+  if @booking.save
+    mail = BookingMailer.with(restaurant: @restaurant).create_confirmation
+    mail.deliver_now
+    redirect_to dogs_path(@restaurant)
+  else
+    render :new
+  end
+
   private
 
   def booking_params
