@@ -1,42 +1,27 @@
-<div class="d-flex justify-content-center my-3">
-  <h1>Share A Dog </h1>
-</div>
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%# <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4zfroY9qlhzbK6HrS2ah7EvzmifEO2WWpg&usqp=CAU" %>
-       <%# <div class="text_i_want_to_align center"><p class="text-align: center">We're here to help you find the perfect companion for a day</p></div> %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <h1 class="h5">Share A Dog </h1>
+  <% end %>
 
-    <% end %>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="items">
-        <ul class="navbar-nav me-auto">
-          <% if user_signed_in? %>
-            <li class="nav-item active perrito"><%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4zfroY9qlhzbK6HrS2ah7EvzmifEO2WWpg&usqp=CAU" %></li>
-            <li class="nav-item active"><p class="text-align: center">We're here to help you find the perfect companion for a day</p></li>
-            <li class="nav-item active">
-              <%#         content, _path %>
-              <%= link_to "Home", root_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item dropdown">
-              <%= image_tag "data:image/png;base64,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", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="items">
+      <ul class="navbar-nav me-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item active perrito"><%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4zfroY9qlhzbK6HrS2ah7EvzmifEO2WWpg&usqp=CAU" %></li>
+          <li class="nav-item active"><p class="text-align: center">We're here to help you find the perfect companion for a day</p></li>
+          <li class="nav-item active"><%= link_to "Home", root_path, class: "nav-link" %></li>
+          <li class="nav-item dropdown">
+            <%= image_tag "data:image/png;base64,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", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
-              </div>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>
