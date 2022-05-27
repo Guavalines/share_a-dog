@@ -1,4 +1,5 @@
 <div class="container my-5">
+
   <h1>
   <% if @dog.photo.attached? %>
     <%= cl_image_tag @dog.photo.key, height: 300, width: 400, crop: :fill %>
@@ -25,14 +26,19 @@
     <%= @dog.size%>
   </p>
 
-  <p>
-    <strong>neutered:</strong>
-    <%= @dog.neutered%>
-  </p>
-   <p>
-    <strong>address:</strong>
-    <%= @dog.address%>
-  </p>
+  <h1><%= @dog.name%></h1>
+  <p><%= @dog.address%></p>
+  <%= cl_image_tag @dog.photo.key, class: "img-fluid mb-3", height: 400, width: 1200, crop: :fill %>
 
-  <%= link_to "Start Booking", new_dog_booking_path(@dog.id), class: 'btn btn-primary' %>
+
+  <div class="bg-light p-3">
+    <p class="border-start fst-italic ps-3">
+      Hi, I'm <mark><%= @dog.name%></mark>! Nice to meet you! I'm a <mark><%= @dog.age %> year old</mark>, <mark><%= @dog.size%> <%= @dog.breed%></mark>.
+      I'm a <mark><%= @dog.sex%></mark> and I'm <mark><%= @dog.neutered? ? "neutured" : "not neutered" %></mark>. I'm paws-itive that we'll be just mutts about each other!
+    </p>
+    <p><%= @dog.bio%></p>
+
+    <%= link_to "Start Booking", new_dog_booking_path(@dog.id), class: 'btn btn-primary' %>
+  </div>
+
 </div>
