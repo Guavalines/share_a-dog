@@ -1,7 +1,35 @@
 <div class="container my-5">
+
+  <h1>
+  <% if @dog.photo.attached? %>
+    <%= cl_image_tag @dog.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+  </h1>
+  <p>
+    <strong>Name:</strong>
+    <%= @dog.name%>
+  </p>
+  <p>
+    <strong>breed:</strong>
+    <%= @dog.breed%>
+  </p>
+  <p>
+    <strong>age:</strong>
+    <%= @dog.age %>
+  </p>
+  <p>
+    <strong>sex:</strong>
+    <%= @dog.sex%>
+  </p>
+  <p>
+    <strong>size:</strong>
+    <%= @dog.size%>
+  </p>
+
   <h1><%= @dog.name%></h1>
   <p><%= @dog.address%></p>
   <%= cl_image_tag @dog.photo.key, class: "img-fluid mb-3", height: 400, width: 1200, crop: :fill %>
+
 
   <div class="bg-light p-3">
     <p class="border-start fst-italic ps-3">
