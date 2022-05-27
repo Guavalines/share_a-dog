@@ -20,18 +20,6 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
-  if @booking.save
-    mail = BookingMailer.with(booking: @booking).create_confirmation
-    mail.deliver_now
-    redirect_to booking_path(@booking)
-  else
-    render :new
-  end
-  # def confirmation
-  #   @booking = Booking.find(params[:id])
-  #   redirect_to booking_path(@booking)
-  # end
-
   private
 
   def booking_params
