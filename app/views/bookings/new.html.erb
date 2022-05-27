@@ -4,8 +4,8 @@
       <div class="bg-white rounded p-3 shadow">
         <h3>Complete your booking for <%= @dog.name %> dog</h3>
         <%= simple_form_for [@dog, @booking] do |f| %>
-          <%= f.input :start_on, html5: true, placeholder: 'choose when you want your time to start' %>
-          <%= f.input :end_on, html5: true, placeholder: "choose when you want your time to end" %>
+          <%= f.input :start_on, html5: true, required: true, placeholder: 'choose when you want your time to start' %>
+          <%= f.input :end_on, html5: true, required: true, placeholder: "choose when you want your time to end" %>
           <%= f.submit class: 'btn btn-flat' %>
         <% end %>
       </div>

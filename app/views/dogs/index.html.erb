@@ -12,7 +12,9 @@
     <% @dogs.each do |dog| %>
       <div class="col-xs-12 col-sm-6 col-lg-4 col-sm-offset-1">
         <div class="card mb-3">
-         <%= cl_image_tag dog.photo.key, height: 320, width: 240, class:"card-img-top", crop: :fill %>
+          <% if dog.photo.attached? %>
+            <%= cl_image_tag dog.photo.key, height: 320, width: 240, class:"card-img-top", crop: :fill %>
+          <% end %>
           <div class= "card-all">
             <h5 class="card-title"><%= dog.name %></h5>
             <p class="card-text"><%= dog.breed %></p>
