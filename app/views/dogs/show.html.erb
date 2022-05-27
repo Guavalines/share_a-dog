@@ -27,6 +27,10 @@
     <strong>neutered:</strong>
     <%= @dog.neutered%>
   </p>
+   <p>
+    <strong>address:</strong>
+    <%= @dog.address%>
+  </p>
 
   <%= link_to "Start Booking", new_dog_booking_path(@dog.id), class: 'btn btn-primary' %>
 </div>
