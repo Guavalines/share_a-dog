@@ -1,13 +1,18 @@
-<div class = "d-flex align-items-center justify-content-center pt-4 pb-4">
-  <%= simple_form_for @dog do |f| %>
-    <%= f.input :name %>
-    <%= f.input :breed %>
-    <%= f.input :born_on %>
-    <%= f.input :sex %>
-    <%= f.input :size%>
-    <%= f.input :neutered %>
-    <%= f.input :photo, as: :file %>
-    <%= f.input :address %>
-    <%= f.button :submit, "Submit", class: "btn btn-primary w-100 rounded-2" %>
-  <% end %>
+<div class="container">
+  <div class="row justify-content-center py-5">
+    <div class="col-lg-4">
+      <h1>Listing a Dog</h1>
+      <%= simple_form_for @dog do |f| %>
+        <%= f.input :name %>
+        <%= f.input :breed %>
+        <%= f.input :born_on, html5: true %>
+        <%= f.input :sex, collection: %w[male female], as: :radio_buttons %>
+        <%= f.input :size, collection: %w[small medium large giant], as: :radio_buttons %>
+        <%= f.input :neutered %>
+        <%= f.input :photo, as: :file %>
+        <%= f.input :address %>
+        <%= f.button :submit, "Submit", class: "btn btn-primary w-100 rounded-2" %>
+      <% end %>
+    </div>
+  </div>
 </div>
