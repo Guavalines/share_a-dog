@@ -1,14 +1,13 @@
-<%= simple_form_for @dog do |f| %>
-  <%= f.input :name %>
-  <%= f.input :breed %>
-  <%= f.input :born_on %>
-  <%= f.input :sex %>
-  <%= f.input :size%>
-  <%= f.input :neutered %>
-  <%= f.input :photo, as: :file %>
-  <%= f.input :address %>
-  <%= f.input :bio %>
-  <%= f.button :submit %>
-<% end %>
-
-<%= link_to "view dogs", dogs_path, class: "btn btn-gradient" %>
+<div class = "d-flex align-items-center justify-content-center pt-4 pb-4">
+  <%= simple_form_for @dog do |f| %>
+    <%= f.input :name %>
+    <%= f.input :breed %>
+    <%= f.input :born_on %>
+    <%= f.input :sex %>
+    <%= f.input :size%>
+    <%= f.input :neutered %>
+    <%= f.input :photo, as: :file %>
+    <%= f.input :address %>
+    <%= f.button :submit, "Submit", class: "btn btn-primary w-100 rounded-2" %>
+  <% end %>
+</div>
