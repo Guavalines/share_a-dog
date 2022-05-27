@@ -12,8 +12,8 @@
     <% @dogs.each do |dog| %>
       <div class="col-xs-12 col-sm-6 col-lg-4 col-sm-offset-1">
         <div class="card mb-3">
-          <img class="card-img-top" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-          <div class="card-body">
+         <%= cl_image_tag dog.photo.key, height: 320, width: 240, class:"card-img-top", crop: :fill %>
+          <div class= "card-all">
             <h5 class="card-title"><%= dog.name %></h5>
             <p class="card-text"><%= dog.breed %></p>
             <%= link_to "View dog", dog_path(dog.id), class: 'btn btn-primary' %>
