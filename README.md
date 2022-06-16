@@ -14,6 +14,7 @@
 
 ## DB schema
 
+![share a dog DB schema](https://user-images.githubusercontent.com/100665876/174196031-6e80e63e-0dba-4edf-8820-d4f98c10c7e1.jpeg)
 
 ## Coding highlights!
 
