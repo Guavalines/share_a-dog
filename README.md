@@ -1,5 +1,5 @@
 ## Share a Dog
-#### Share a Dog is an Airbnb clone web app created by 3 student developers. Check out the website here: [Share a Dog]()
+#### Share a Dog is an Airbnb clone web app created by 3 student developers. Check out the website here: [Share a Dog](shareadog.net)
 
 ##### Description
 
