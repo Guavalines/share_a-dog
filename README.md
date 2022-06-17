@@ -11,6 +11,7 @@
 
 ## User stories and actions
 
+![User stories and actions](https://user-images.githubusercontent.com/100665876/174197563-3b574149-3798-4f69-9d42-bb16ffcd28be.jpeg)
 
 ## DB schema
 
