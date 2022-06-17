@@ -20,6 +20,7 @@
 ## Coding highlights!
 
 - Map with an external Rails service Geocoding.
+- Image upload with an external Rails service Cloudinary.
 
 
 
