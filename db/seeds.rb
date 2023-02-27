@@ -2,7 +2,7 @@ dog_attributes = [
   { breed: "Yorkshire", size: "small", image_url: "app/assets/images/york.jpg" },
   { breed: "San Bernard", size: "giant", image_url: "app/assets/images/san_bernanrd.jpg" },
   { breed: "Rat Terrier", size: "small", image_url: "app/assets/images/jujuba.jpg" },
-  { breed: "German Shepherd", size: "large", image_url: "app/assets/images/german_shepherd.jpg" },
+  { breed: "Siberian Husky", size: "large", image_url: "app/assets/images/Juan_Demarco_ Siberian_Husky.jpeg" },
   { breed: "chihuahua", size: "small", image_url: "app/assets/images/chihuahua.jpg" },
   { breed: "Golden Retriever", size: "large", image_url: "app/assets/images/golden_retriever.jpg" },
 ]
