@@ -1,4 +1,5 @@
 dog_attributes = [
+ finish_seedfile
   { breed: "Bull Terrier", size: "medium", image_url: "app/assets/images/Bull_Terrier.jpeg" },
   { breed: "Chihuahua", size: "small", image_url: "app/assets/images/Chihuahua.jpg" },
   { breed: "Great Dane", size: "giant", image_url: "app/assets/images/Great_Dane.jpeg" },
