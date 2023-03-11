@@ -1,5 +1,4 @@
 dog_attributes = [
- finish_seedfile
   { breed: "Bull Terrier", size: "medium", image_url: "app/assets/images/Bull_Terrier.jpeg" },
   { breed: "Chihuahua", size: "small", image_url: "app/assets/images/Chihuahua.jpg" },
   { breed: "Great Dane", size: "giant", image_url: "app/assets/images/Great_Dane.jpeg" },
@@ -7,8 +6,9 @@ dog_attributes = [
   { breed: "Pit Bull", size: "large", image_url: "app/assets/images/Pitt_Bull.jpeg" },
   { breed: "Poodle", size: "medium", image_url: "app/assets/images/Poodle.jpeg" },
   { breed: "Shih Tzu", size: "small", image_url: "app/assets/images/Shih_Tzu.jpeg" },
-  { breed: "Siberian Husky", size: "large", image_url: "app/assets/images/Siberian_Husky.jpeg" },
+  { breed: "Siberian Husky", size: "large", image_url: "app/assets/images/Siberian_Husky.jpeg" }
 ]
+
 dog_attributes_index = -1
 
 working_addresses = [
