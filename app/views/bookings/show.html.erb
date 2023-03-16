@@ -1,4 +1,4 @@
-<h1>Your booking is confirmed</h1>
-<%= @booking.dog.name %>
-<%= @booking.start_on %>
-<%= @booking.end_on %>
+<div class="container mt-3" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1>Thank You!</h1>
+  <p>Booking confirmation for <%= @booking.dog.name %> from <strong><%= @booking.start_on %></strong> until <strong><%= @booking.end_on %></strong></p>
+</div>
