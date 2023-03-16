@@ -1,12 +1,13 @@
 dog_attributes = [
   { breed: "Bull Terrier", size: "medium", image_url: "app/assets/images/Bull_Terrier.jpeg" },
-  { breed: "Chihuahua", size: "small", image_url: "app/assets/images/Chihuahua.jpg" },
+  { breed: "Siberian Husky", size: "large", image_url: "app/assets/images/Siberian_Husky.jpeg" },
+  { breed: "Poodle", size: "medium", image_url: "app/assets/images/Poodle.jpeg" },
   { breed: "Great Dane", size: "giant", image_url: "app/assets/images/Great_Dane.jpeg" },
   { breed: "Komondor", size: "giant", image_url: "app/assets/images/Komondor.jpeg" },
   { breed: "Pit Bull", size: "large", image_url: "app/assets/images/Pitt_Bull.jpeg" },
-  { breed: "Poodle", size: "medium", image_url: "app/assets/images/Poodle.jpeg" },
   { breed: "Shih Tzu", size: "small", image_url: "app/assets/images/Shih_Tzu.jpeg" },
-  { breed: "Siberian Husky", size: "large", image_url: "app/assets/images/Siberian_Husky.jpeg" }
+  { breed: "Chihuahua", size: "small", image_url: "app/assets/images/Chihuahua.jpg" },
+  { breed: "Xoloitzcuintli", size: "medium", image_url: "app/assets/images/Xolo.jpg" }
 ]
 
 dog_attributes_index = -1
