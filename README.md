@@ -1,8 +1,6 @@
 
 ![Screen Shot 2022-11-17 at 3 59 10 PM](https://user-images.githubusercontent.com/100665876/204125091-4f0a7eca-f3e5-4beb-8a83-0f8a58b09c66.jpeg)
 
-
-# SHARE A DOG
 # [www.shareadog.net](http://www.shareadog.net)
 
 
