@@ -8,6 +8,10 @@
 
 #### Share a Dog is an Airbnb clone web app created in collaboration between me and 2 other developers, for which I was the TEAM LEAD. Its goal is to help people easily share their dogs; Dog owners can list a dog, dog-borrowers can borrow a dog.
 
+## Features
+- Map with an external Rails service Geocoding.
+- Image upload with an external Rails service Cloudinary.
+
 ## Team members
 
 [Joel Pickell](https://github.com/Guavalines), [Nadia Isela](https://github.com/nadialguno), and [Jose Garcia](https://github.com/pepe371)
@@ -20,10 +24,6 @@
 
 ![share a dog DB schema](https://user-images.githubusercontent.com/100665876/174196031-6e80e63e-0dba-4edf-8820-d4f98c10c7e1.jpeg)
 
-## Coding highlights!
-
-- Map with an external Rails service Geocoding.
-- Image upload with an external Rails service Cloudinary.
 
 
 ## Please initialize these before starting the app:
